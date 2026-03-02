@@ -1,0 +1,8 @@
+print("hello world")
+input()
+print("hello world")
+input()
+print("hello world")
+print("hello world")
+input()
+print("hello world")
