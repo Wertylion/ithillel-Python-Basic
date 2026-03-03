@@ -1,14 +1,14 @@
 # задача 1
 
-num1 = int(input("enter your number: "))
-print("square of a number =", num1**2)
+# num1 = int(input("enter your number: "))
+# print("square of a number =", num1**2)
 
 # задача 2
 
 # number1 = int(input("enter your 1 number: "))
 # number2 = int(input("enter your 2 number: "))
 # number3 = int(input("enter your 3 number: "))
-# print((number1+number2+number3)/3)
+# print("average:",(number1+number2+number3)/3)
 
 # задача 3
 
