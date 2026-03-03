@@ -32,8 +32,8 @@
 
 # length = int(input("enter your length: "))
 # width = int(input("enter your width: "))
-# s = (width + length) * 2
-# print("Perimeter:", s)
+# perimeter = (width + length) * 2
+# print("Perimeter:", perimeter)
 
 # задача 7 v1
 
