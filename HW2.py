@@ -1,7 +1,7 @@
 # задача 1
 
-# num1 = int(input("enter your number: "))
-# print(num1**2)
+num1 = int(input("enter your number: "))
+print("square of a number =", num1**2)
 
 # задача 2
 
