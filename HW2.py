@@ -42,7 +42,7 @@
 # number2 = numeric // 100 % 10
 # number3 = numeric // 10 % 10
 # number4 = numeric % 10
-#
+
 # print(number1)
 # print(number2)
 # print(number3)
