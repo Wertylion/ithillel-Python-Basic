@@ -359,12 +359,12 @@
 # [] => []
 # [12, 3, 4, 10, 8] => [8, 12, 3, 4, 10]
 
-nums = [1]
-if len(nums) > 1:
-    nums.insert(0, nums[-1])
-    nums.pop()
-
-print(nums)
+# nums = [1]
+# if len(nums) > 1:
+#     nums.insert(0, nums[-1])
+#     nums.pop()
+#
+# print(nums)
 
 ####
 # [1, 2, 3, 4, 5, 6] => [[1, 2, 3], [4, 5, 6]]
@@ -383,15 +383,23 @@ print(nums)
 # Важливо! Потрібно створити рішення, яке обробляє 3 випадки - список порожній,
 # у списку парна кількість елементів і в списку непарна кількість елементів.
 
-# nums = []
-# middle_index = len(nums) // 2
+nums = []
+middle_index = len(nums) // 2
+
+if len(nums) % 2 != 0:
+    middle_index += 1
+
+part1 = nums[:middle_index]
+part2 = nums[middle_index:]
+result = [part1, part2]
+print(result)
+
+
+# nums = [1, 2, 3, 4, 5]
 #
-# if len(nums) % 2 != 0:
-#     middle_index += 1
+# middle = (len(nums) + 1) // 2
 #
-# part1 = nums[:middle_index]
-# part2 = nums[middle_index:]
-# print(part1)
-# print(part2)
+# part1 = nums[:middle]
+# part2 = nums[middle:]
 # result = [part1, part2]
 # print(result)
