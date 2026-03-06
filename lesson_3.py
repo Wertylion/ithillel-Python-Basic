@@ -359,13 +359,12 @@
 # [] => []
 # [12, 3, 4, 10, 8] => [8, 12, 3, 4, 10]
 
-# nums = [12, 3, 4, 10, 8]
-# if len(nums) > 0:
-#     nums.insert(0, nums[-1])
-#     # print(nums)
-#     nums.pop()
-#
-# print(nums)
+nums = [1]
+if len(nums) > 1:
+    nums.insert(0, nums[-1])
+    nums.pop()
+
+print(nums)
 
 ####
 # [1, 2, 3, 4, 5, 6] => [[1, 2, 3], [4, 5, 6]]
