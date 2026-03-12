@@ -208,7 +208,7 @@
 # print(nums)
 
 # slices -> срезы
-# numbers = [1, 3, 25, 7, 2, 7]
+numbers = [1, 3, 25, 7, 2, 7]
 #
 # print(numbers[:])
 # print(numbers[1:])
@@ -216,6 +216,7 @@
 # print(numbers[:5])
 # print(numbers[1:5:2])
 # print(numbers[::-1])
+# print(numbers[:-1])
 # print(numbers[5::-1])
 # print(numbers[5:0:-1])
 
@@ -383,16 +384,16 @@
 # Важливо! Потрібно створити рішення, яке обробляє 3 випадки - список порожній,
 # у списку парна кількість елементів і в списку непарна кількість елементів.
 
-nums = []
-middle_index = len(nums) // 2
-
-if len(nums) % 2 != 0:
-    middle_index += 1
-
-part1 = nums[:middle_index]
-part2 = nums[middle_index:]
-result = [part1, part2]
-print(result)
+# nums = []
+# middle_index = len(nums) // 2
+#
+# if len(nums) % 2 != 0:
+#     middle_index += 1
+#
+# part1 = nums[:middle_index]
+# part2 = nums[middle_index:]
+# result = [part1, part2]
+# print(result)
 
 
 # nums = [1, 2, 3, 4, 5]
