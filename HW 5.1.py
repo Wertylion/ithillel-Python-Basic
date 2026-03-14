@@ -26,7 +26,6 @@ elif keyword.iskeyword(variable_name):
     print(f"Incorrect variable name: {variable_name}")
 elif "__" in variable_name:
     print(f"Incorrect variable name: {variable_name}")
-elif any(symbol in string.punctuation.replace("_", "") for symbol in variable_name):
     print(f"Incorrect variable name: {variable_name}")
 elif any(letter.isupper() for letter in variable_name):
     print(f"Incorrect variable name: {variable_name}")
