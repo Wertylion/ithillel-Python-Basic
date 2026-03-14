@@ -230,8 +230,8 @@
 #     for number in row:
 #         print(number, end=" ")
 #     print()
-
-# - вивести суму чисел головної діагоналі матриці
+#
+# # - вивести суму чисел головної діагоналі матриці
 #
 # general_diagonal_sum = 0
 #
@@ -322,43 +322,43 @@
 #         print("Incorrect matrix direction!")
 
 ##########################
-# import random
-# import string
-#
-# MIN_PASSWORD_LENGTH = 8
-# MAX_PASSWORD_LENGTH = 16
-# DATA_FOR_PASSWORD = string.ascii_letters + string.punctuation + string.digits
-# FORBIDDEN_SYMBOLS = "lLiI`'\""
-#
-# data_for_password = "".join([symbol for symbol in DATA_FOR_PASSWORD if symbol not in FORBIDDEN_SYMBOLS])
-#
-# while True:
-#     user_password_len = input(f"Enter your password length (from {MIN_PASSWORD_LENGTH} to {MAX_PASSWORD_LENGTH}): ")
-#
-#     if not user_password_len.isnumeric():
-#         print("Enter a valid number!")
-#         continue
-#
-#     user_password_len = int(user_password_len)
-#
-#     if user_password_len < MIN_PASSWORD_LENGTH or user_password_len > MAX_PASSWORD_LENGTH:
-#         print("Incorrect password length!")
-#         continue
-#
-#     password_raw = []
-#
-#     for _ in range(user_password_len):
-#         password_raw.append(random.choice(data_for_password))
-#
-#     random.shuffle(password_raw)
-#     password = "".join(password_raw)
-#
-#     print(f"Your new password is: {password}")
-#
-#     user_input = input("Enter '-' to exit the program or any key to continue: ")
-#     if user_input == "-":
-#         print("Exit from program...")
-#         break
+import random
+import string
+
+MIN_PASSWORD_LENGTH = 8
+MAX_PASSWORD_LENGTH = 16
+DATA_FOR_PASSWORD = string.ascii_letters + string.punctuation + string.digits
+FORBIDDEN_SYMBOLS = "lLiI`'\""
+
+data_for_password = "".join([symbol for symbol in DATA_FOR_PASSWORD if symbol not in FORBIDDEN_SYMBOLS])
+
+while True:
+    user_password_len = input(f"Enter your password length (from {MIN_PASSWORD_LENGTH} to {MAX_PASSWORD_LENGTH}): ")
+
+    if not user_password_len.isnumeric():
+        print("Enter a valid number!")
+        continue
+
+    user_password_len = int(user_password_len)
+
+    if user_password_len < MIN_PASSWORD_LENGTH or user_password_len > MAX_PASSWORD_LENGTH:
+        print("Incorrect password length!")
+        continue
+
+    password_raw = []
+
+    for _ in range(user_password_len):
+        password_raw.append(random.choice(data_for_password))
+
+    random.shuffle(password_raw)
+    password = "".join(password_raw)
+
+    print(f"Your new password is: {password}")
+
+    user_input = input("Enter '-' to exit the program or any key to continue: ")
+    if user_input == "-":
+        print("Exit from program...")
+        break
 
 ####
 # for _ in range(3):
