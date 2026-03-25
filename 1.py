@@ -149,3 +149,73 @@
 #         list_numbers.append(number_1)
 #         print(list_numbers)
 
+# №№№№№№№№№№№№№№№№№№№№№№№№#
+
+# numbers = int(input("n = "))
+# list_1 = []
+# for i  in range(numbers + 1):
+#     if i % 2 == 0:
+#         list_1.append(i)
+# print(list_1)
+
+
+# list_2= []
+# for i in range(100):
+#     if i % 3 == 0:
+#         list_2.append(i)
+# print(list_2)
+
+# hello → olleh
+# python → nohtyp
+
+# lesson = input(":")
+# print(lesson[::-1])
+#
+# def reverse_string(text):
+#     return text[::-1]
+#
+#
+# word = input("Enter text: ")
+# print(reverse_string(word))
+
+# word = input("Enter text: ")
+# set_1 = {}
+# for i in word:
+#     if i in set_1:
+#         set_1[i] += 1
+#     else:
+#         set_1[i] = 1
+#
+# print(set_1)
+#
+# [1, 5, 3, 9, 7] → 7
+# [10, 20, 30] → 20
+
+# numbers = [10, 20, 30]
+# print(sorted(set(numbers))[-2])
+
+# set_nums_1 = [1, 2, 3, 4]
+# set_nums_2 = [3, 4, 5, 6]
+# set_nums_3 = []
+# for i in set_nums_1:
+#     for j in set_nums_2:
+#         if i == j:
+#             set_nums_3.append(i)
+# print(set_nums_3)
+#
+# set_nums_1 = [1, 2, 3, 4]
+# set_nums_2 = [3, 4, 5, 6]
+# set_nums_3 = []
+# for i in set_nums_1:
+#     if i in set_nums_2:
+#         set_nums_3.append(i)
+# print(set_nums_3)
+# list_1 = [1, 2, 3, 4]
+# list_2 = [3, 4, 5, 6]
+#
+# result = list(set(list_1) & set(list_2))
+
+print(result)
+
+
+
