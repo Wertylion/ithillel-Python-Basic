@@ -197,41 +197,41 @@
 #######################
 # Генераторні функції
 # Генератор - це об'єкт, який відразу при створенні не обчислює значення всіх своїх елементів
-# generator = (i for i in range(3))
-# # print(generator)
-# # print(next(generator))
-# # print(next(generator))
-# # print(next(generator))
-# # print(next(generator))  # StopIteration
-# # close() -> зупинка генератора
-# # throw() -> генератор кине виняток
-#
-# for i in generator:
-#     print(i)
+generator = (i for i in range(3))
+# print(generator)
+# print(next(generator))
+# print(next(generator))
+# print(next(generator))
+# print(next(generator))  # StopIteration
+# close() -> зупинка генератора
+# throw() -> генератор кине виняток
+
+for i in generator:
+    print(i)
 
 
-# def create_generator():
-#     number = 1
-#     while True:
-#         yield number
-#         number += 1
-#
-#
-# my_gen = create_generator()
-# # print(my_gen)
-# # print(next(my_gen))
-# # print(next(my_gen))
-# # print(next(my_gen))
-# # print(next(my_gen))
-# # # #
-# try:
-#     for i in my_gen:
-#         print(i)
-#         if i > 10:
-#             # my_gen.close()
-#             my_gen.throw(Exception("End!"))
-# except Exception as e:
-#     print(e)
+def create_generator():
+    number = 1
+    while True:
+        yield number
+        number += 1
+
+
+my_gen = create_generator()
+# print(my_gen)
+# print(next(my_gen))
+# print(next(my_gen))
+# print(next(my_gen))
+# print(next(my_gen))
+# # #
+try:
+    for i in my_gen:
+        print(i)
+        if i > 10:
+            # my_gen.close()
+            my_gen.throw(Exception("End!"))
+except Exception as e:
+    print(e)
 
 #########
 
