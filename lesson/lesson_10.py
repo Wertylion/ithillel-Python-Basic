@@ -278,67 +278,67 @@
 # re.compile() - Ми можемо зібрати регулярне вираження в окремий об'єкт, який можна використовувати для пошуку.
 # Це також позбавляє переписування одного і того ж виразу.
 
-# import re
+import re
+
+
+result = re.match(r'he', 'hello world hello')
+print(result)
+print(result.group(0))
 #
 #
-# result = re.match(r'he', 'hello world hello')
-# print(result)
-# print(result.group(0))
-# #
-# #
-# result = re.search(r'world', 'hello world hello')
-# print(result.start())
-# print(result.end())
-# #
-# #
-# result = re.findall(r'he', 'hello world hello')
-# print(result)
-# #
-# #
-# result = re.split(r'l', 'hello world hello', maxsplit=1)
-# print(result)
-# #
-# result = re.split(r'l', 'hello world hello')
-# print(result)  # ['he', '', 'o wor', 'd he', '', 'o']
-# #
-# #
-# pattern = re.compile('hello')
-# result = pattern.findall('hello world hello')
-# print(result)
+result = re.search(r'world', 'hello world hello')
+print(result.start())
+print(result.end())
 #
-# result = re.findall(r'.', "It is a long established fact that a reader")
-# print(result)
 #
-# result = re.findall(r'\w', "It is a long established fact that a reader")
-# print(result)
+result = re.findall(r'he', 'hello world hello')
+print(result)
 #
-# result = re.findall(r'\w*', "It is a long established fact that a reader")
-# print(result)
 #
-# result = re.findall(r'\w+', "It is a long established fact that a reader")
-# print(result)
+result = re.split(r'l', 'hello world hello', maxsplit=1)
+print(result)
 #
-# result = re.findall(r'\w+$', "It is a long established fact that a reader")
-# print(result)
+result = re.split(r'l', 'hello world hello')
+print(result)  # ['he', '', 'o wor', 'd he', '', 'o']
 #
-# result = re.findall(r'^\w+', "It is a long established fact that a reader")
-# print(result)
 #
-# result = re.findall(r'\w\w', "It is a long established fact that a reader")
-# print(result)
-#
-# result = re.findall(r'\b\w', "It is a long established fact that a reader")
-# print(result)
-#
-# result = re.findall(r'@\w+.\w+', "test1@gmail.com, test2@qqq.com, test3@www.com")
-# print(result)
-#
-# result = re.findall(r'@\w+.(\w+)', "test1@gmail.com, test2@qqq.ua, test3@www.com")
-# print(result)
-#
-# result = re.findall(r'\d{2}-\d{2}-\d{4}', 'Amit 34-3456 12-05-2007, XYZ 56-4532 11-11-2011, ABC 67-8945 12-017-2004')
-# print(result)
-#
+pattern = re.compile('hello')
+result = pattern.findall('hello world hello')
+print(result)
+
+result = re.findall(r'.', "It is a long established fact that a reader")
+print(result)
+
+result = re.findall(r'\w', "It is a long established fact that a reader")
+print(result)
+
+result = re.findall(r'\w*', "It is a long established fact that a reader")
+print(result)
+
+result = re.findall(r'\w+', "It is a long established fact that a reader")
+print(result)
+
+result = re.findall(r'\w+$', "It is a long established fact that a reader")
+print(result)
+
+result = re.findall(r'^\w+', "It is a long established fact that a reader")
+print(result)
+
+result = re.findall(r'\w\w', "It is a long established fact that a reader")
+print(result)
+
+result = re.findall(r'\b\w', "It is a long established fact that a reader")
+print(result)
+
+result = re.findall(r'@\w+.\w+', "test1@gmail.com, test2@qqq.com, test3@www.com")
+print(result)
+
+result = re.findall(r'@\w+.(\w+)', "test1@gmail.com, test2@qqq.ua, test3@www.com")
+print(result)
+
+result = re.findall(r'\d{2}-\d{2}-\d{4}', 'Amit 34-3456 12-05-2007, XYZ 56-4532 11-11-2011, ABC 67-8945 12-017-2004')
+print(result)
+
 # # Написати валідації за допомогою регулярних виразів та протестувати на рiзних кейсах:
 # # - домашній номер телефону (тільки цифри та довжина номера)
 # #
