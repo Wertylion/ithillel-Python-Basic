@@ -214,8 +214,43 @@
 # list_2 = [3, 4, 5, 6]
 #
 # result = list(set(list_1) & set(list_2))
+#
+# print
 
-print(result)
+# a = [-99.9, -53.14, -78.8, -36.7]
+# b = -100.2
+# print(a > b)
 
+# a = 5
+# print(12 < a < -12)
 
+# a = b = c = [1, 2, 3]
+# b.append(4)
+# c.pop(2)
+# a.extend(c)
+# print(a)
 
+# x = True
+# y = False
+# z = False
+# if not x or y:
+#     print(1)
+# elif not x or not y and z:
+#     print(2)
+# elif not x or y or not y and x:
+#     print(3)
+# else:
+#     print(4)
+
+# d = lambda p: p * 2
+# t = lambda p: p * 3
+# x = 2
+# x = d(x)
+# x = t(x)
+# x = d(x)
+# print(x)
+
+# name = "snow storm"
+# print("%s" % name[6:8])
+a = [1,2,3,None,(),[],]
+print(len(a))
