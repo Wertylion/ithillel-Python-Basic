@@ -252,5 +252,20 @@
 
 # name = "snow storm"
 # print("%s" % name[6:8])
-a = [1,2,3,None,(),[],]
-print(len(a))
+# a = [1,2,3,None,(),[],]
+# print(len(a))
+# import string
+#
+# text = '<title>Жарт про функції</title>'
+# for i in string.ascii_letters:
+#     text = text.replace(i,"")
+# for j in string.punctuation:
+#     text = text.replace(j,"")
+# print(text)
+
+
+text = "Let'sssss just go and see the worldddd and just show them"
+words = text.split()
+for word in words:
+    if len(word) > 7:
+        print(word)
