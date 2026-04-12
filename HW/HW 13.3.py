@@ -16,11 +16,8 @@ def song_words(songtext):
 
     return words7plus
 
-
-# отримали результат
 result = song_words('songtext.txt')
 
-# запис у файл
 with open('result.txt', 'w', encoding='utf-8') as file:
     for word in result:
         file.write(word + '\n')
