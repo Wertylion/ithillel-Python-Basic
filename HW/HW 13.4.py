@@ -113,8 +113,8 @@ elif choice == 2:
         else:
             updated_lines.append(line)
 
-    if not found:
-        print("Contact does not exist")
+        if not found:
+            print("Contact does not exist")
     else:
         with open('contact book.txt', 'w', encoding='utf-8') as file:
             file.writelines(updated_lines)
